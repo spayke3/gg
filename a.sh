@@ -105,8 +105,7 @@ common_prep() {
     rm -rf TMP_PATCHES
     rm -rf hardware/lineage/
     rm -rf hardware/pixelworks/interfaces
-    sudo apt update >/dev/null 2>&1
-    sudo apt install patchelf -y >/dev/null 2>&1
+
 }
 
 common_env_exports() {
@@ -131,7 +130,7 @@ common_env_exports() {
 # ------------------------------------------------------------------------------
 run_evolution() {
     common_prep
-    git clone https://github.com/spayke3/kk.git -b main
+    git clone https://github.com/spayke3/kk.git
    
 }
 
